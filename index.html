@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BELLA'S TEST DRIVE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<audio id="scrollAudio" src="carSound.mp3" preload="auto"></audio>
+	<div class="top">BELLA'S TEST DRIVE</div>
+	
+	<div class="backing">
+		<div class="tab">2022</div>
+		<div class="tab">2023</div>
+		<div class="tab">2024</div>
+		<div class="tab">2025</div>
+		<div class="tab">CURRENT</div>		
+	</div>
+	
+	<div class="side">
+		<h>EXPERIENCE AND EXTRAS</h>
+		<text2>
+		<ul>
+			<li>Flight Safety International - Intern</li>
+			<li>Tulsa Teachers' Credit Union - Intern</li>
+			<li>ORU ACM-W - Secretary/Treasurer</li>
+			<li>ORU Student Success - Peer Success Coach</li>
+			<li>ORU Student Success - Head Peer Success Coach</li>
+			<li>ORU CAAT - Tutor for Math and Computer Science</li>
+			<li>ORU Computing and Mathematics - Teaching Assistant</li>
+			<li>ORU Missions - Team Chile 2025</li>
+			<li>ORU Missions - Team Scotland 2025</li>
+			<li>COTM BA - Production Volunteer</li>
+			<li>Mid-Cities Community Church - Production Volunteer</li>
+			<li>Mid-Cities Community Church - Childrens' Ministry Volunteer</li>
+			<li>Mid-Cities Community Church - Bahamas Mission Trip</li>
+			<li>Mid-Cities Community Church - Baja, Mexico Mission Trip</li>
+			
+		</ul>
+		</text2>
+	</div>
+	
+	<div class="core" id="core">
+		<h>ABOUT ME</h>
+		<text>yap yap yap</text>
+	</div>
+	
+	<div class="second" id="second">
+	<text> fun facts!</text>
+	</div>
+
+	<div class="base" style="align-items: flex-end">
+		<text2"><br>Bella Goodman 
+		<br><br> (432)-307-0284 
+		<br><br> veritasbg@outlook.com 
+		<br><br> <a href="https://www.linkedin.com/in/bella-goodman-132ab8255/" style="color:#C85F73" target="_blank">LinkedIn</a>
+		<br><br> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Indeed</a>
+		</text2>
+	</div>
+	
+	
+	<script>
+		const audio = document.getElementById('scrollAudio');
+		let hasPlayed = false;
+
+		window.addEventListener('scroll', () => {
+		  if (!hasPlayed) {
+			audio.play().catch((e) => console.log("Autoplay failed:", e));
+			hasPlayed = true;
+		  }
+		});
+	</script>
+	
+	<script>
+		const tabContent = {
+			"2022": `<h>FALL OF 2022</h>
+			<sh>CSC 111 - INTRODUCTION TO COMPUTING</sh>
+			<text>The variable or function names may be strange and the comments may not make sense. Unfortunately, 
+			these were written before I realized that coding standards exist so our fellow devs can understand what we write. I 
+			look back on these with pity for my former TA and gratitude that I am no longer naming numbers 'cheese'.<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			`,
+			
+			"2023": `<h>SPRING AND FALL OF 2023</h>
+			<sh>CSC 206 - INTERMEDIATE PROGRAMMING</sh>
+			<text>best professor ever and an incredible ta.<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			<sh>CSC 331 - COMPUTER LOGIC AND ORGANIZATION</sh>
+			<text>honk shoo mimimi core<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			<sh>CSC 255 - DATA STRUCTURES</sh>
+			<text>killed me and stole my organs<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			<sh>CSC 356 - DESIGN AND ANALYSIS OF ALGORITHMS</sh>
+			<text>fell asleep in this class a lot<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			`,
+			
+			"2024": `<h>SPRING AND FALL OF 2024</h>
+			<sh>CSC 212 - COMPUTING ETHICS</sh>
+			<text>very fun and cool!<br>
+			<ul>
+			</ul>
+			</text>
+			<sh>CSC 456 - ADVANCED ALGORITHMS</sh>
+			<text>very fun and cool!<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			<sh>CSC 444 - DISTRIBUTED SYSTEMS</sh>
+			<text>mostly written or in class work - very few saved files<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>
+			<sh>CSC 470 - AUTOMATA AND COMPLEXITY THEORY</sh>
+			<text>super fun<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Name of Project - Brief Description or Date</a> </li>
+			</ul>
+			</text>			
+			<sh>CSC 453 - COMPILER DESIGN</sh>
+			<text>This class taught me a lot about teaming and putting in effort beyond what I thought I was capable of. The class initially was divided into 
+			groups of four, and I was partnered with some of my close friends. The semester blew up for half of the group and our team fell apart and we were 
+			left to fend for ourselves. All but one girl managed to not only pass the class but make high grades, and we each did it on our own ability. The first
+			few programs were done as a team, while the last few were done entirely by me. This class focused on interpreting C commands and putting them through
+			a Java Bytecode compiler to get a Java result.<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">First pt. 1</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Project 1a</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Project 1</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Project 2</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Project 3</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Project 4</a> </li>
+				
+			</ul>
+			</text>		
+			<sh>CSC 498 - SENIOR PROJECT I</sh>
+			<text>My senior project was not based on a program or developing something. I set up a summer program for ORU's Computing and Mathematics Department 
+			that will recieve incoming high school juniors and seniors and teach them all of CSC111 in the span of five days. There was a lot I had to manage for this project
+			between budgeting and materials and scheduling and inter-department conversations as well as getting approval from registrar... the list goes on and on. This class
+			took two semesters, and this would be the first half of the work if I hadn't continued working on my files and moved them to the CSC499 directory.<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Project Proposal</a> </li>
+			</ul>
+			</text>
+			<sh>CSC 499 - SENIOR PROJECT II</sh>
+			<text>The continuation and completion of Senior Project I. Given the nature of my project, I am not allowed to share all the details (such as budget, materials, so on and so forth) 
+			but I did get it done and ORU will be starting the first cycle summer of 2026.<br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Assignment 2 - Gaant Chart</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Senior Project Presentation</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Senior Project Document</a> </li>
+			</ul>
+			</text>
+			`,
+			
+			"2025": `<h>SPRING OF 2025</h>
+			<sh>CSC 456 - BIG DATA AND HIGH PERFORMANCE COMPUTING</sh>
+			<text>This class primarily featured a lack of sleep and technical difficulties galore. My partner and I fought tooth and nail for this class
+			and, by the grace of God, made it out with an A. This class focused on teaching us how to parallelize programs and efficiently process enormous
+			sets of data. I had a lot of hands-on experience with identifying trends in data, optimizing code for faster runtimes, and working when you have
+			no energy left to work. <br>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Big Data Lab 1</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Big Data Lab 2</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">Big Data Lab 3</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">High Performance Computing Lab 1</a> </li>
+				<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#C85F73" target="_blank">High Performance Computing Lab 2</a> </li>
+			</ul>
+			</text>
+			`,
+			
+			
+			"CURRENT": `<h>CURRENT WORK</h>
+			<text>At present, I'm not sure if I can share anything I've been working on besides this website. I'm going to include some really cool games instead.<br>
+<!--			<div class="design"> ASPHALT 9: LEGENDS<br> this game is like one of my all time favorites. its actually where the background comes from
+				<img src="asphalt.jpg" width="50" height="50">
+			</div>
+			<div class="design"> FFXV 
+				<img src="ffxv.jpg" width="50" height="50">			
+			</div>
+			<div class="design"> THE LONG DARK
+				<img src="the long dark.jpg" width="50" height="50">			
+			</div>
+			<div class="design"> STARDEW VALLEY
+				<img src="stardew.jpg" width="50" height="50">			
+			</div>
+			<div class="design"> MINECRAFT
+				<img src="minecraft.jpg" width="50" height="50">			
+			</div> -->
+			</text>`
+		
+		};
+
+		const tabs = document.querySelectorAll('.tab');
+		const core = document.getElementById('core');
+
+		tabs.forEach(tab => {
+			tab.addEventListener('click', () => {
+			  const tabName = tab.textContent.trim();
+			  core.innerHTML = tabContent[tabName] || `<h>Oops</h><text>No content available.</text>`;
+			});
+		});
+	</script>
+
+<!--	<script>
+	  const pages = [
+		`
+		<h>FUN FACTS</h>
+			<text>I have four dogs! One dog had puppies and we kept three of them.</text>
+			<div class="arrow" style="justify-content:flex-end"><<</div>
+			<div class="arrow" style="justify-content:flex-start">>></div>
+			`,
+			
+			`
+			<h>FUN FACTS</h>
+			<text>I'm starting to take an interest in photography. These are some photos from my recent trips!</text>
+			<div class="arrow" style="justify-content:flex-end"><<</div>
+			<div class="arrow" style="justify-content:flex-start">>></div>
+			`,
+			
+			`
+			<h>FUN FACTS</h>
+			<text>Here are some of my all-time favorite albums!</text>
+			<div class="arrow" style="justify-content:flex-end"><<</div>
+			<div class="arrow" style="justify-content:flex-start">>></div>
+			`
+		  ];
+
+		  let currentPage = 0;
+
+		  const container = document.getElementById('second');
+
+		  function renderPage() {
+			container.innerHTML = pages[currentPage];
+
+			const arrows = container.querySelectorAll('.arrow');
+
+			arrows.forEach(arrow => {
+			  arrow.addEventListener('click', () => {
+				const dir = arrow.textContent.trim();
+				if (dir === '<<') {
+				  currentPage = (currentPage - 1 + pages.length) % pages.length;
+				} else if (dir === '>>') {
+				  currentPage = (currentPage + 1) % pages.length;
+				}
+				renderPage();
+			  });
+			});
+		  }
+
+		  // Initial render
+		  renderPage();
+	</script>
+-->
+	<!--🏎️🏎️🏎️-->
+</body>
+</html>
+
