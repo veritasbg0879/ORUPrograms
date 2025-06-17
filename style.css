@@ -1,0 +1,178 @@
+body {
+  background: black;
+  background-image: url('car.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+
+}
+h {
+	color: rgba(170, 65, 75, 1);
+	font-size: 22px;
+	margin: 0 0 5px 0;
+	font-family: Bookman, URW Bookman L, serif;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: 3px;
+}
+sh {
+	color: rgba(255, 255, 255, 1);
+	margin: 5px;
+	font-size: 18px;
+	font-family: Bookman, URW Bookman L, serif;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: 3px;
+}
+text {
+	color: white;
+	margin: 5px;
+	font-size: 14px;
+	font-family: Bookman, URW Bookman L, serif;
+	text-align: left;
+}
+text2 {
+	color: white;
+	margin: 10px;
+	font-size: 14px;
+	font-family: Bookman, URW Bookman L, serif;
+	text-align: left;
+}
+link {
+	color: rgba(200, 95, 115, 1);
+	margin: 10px;
+	font-size: 14px;
+	font-family: Bookman, URW Bookman L, serif;
+	text-align: left;
+	text-decoration: underline;
+}
+.top {
+  width: 800px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px groove rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  font-family: Bookman, URW Bookman L, serif;
+  font-size: 20px;
+  letter-spacing: 15px;
+  font-weight: 900;
+  text-align: center;
+}
+.backing {
+	margin: 20px 20px 0 20px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	justify-content: center; /* center horizontally */
+	align-items: center; /* center vertically */
+	display: flex;
+	position: relative;
+}
+.side {
+	margin: 20px;
+	padding: 20px;
+	height: 1000px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	float: left;
+	justify-content: center; /* center horizontally */
+	align-items: center; /* center vertically */
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.core {
+	margin: 20px;
+	padding: 20px;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgba(125, 20, 30, 1);
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	display: flex; /* makes child elements align easily */
+	flex-direction: column;
+	position: relative;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.design {
+	margin: 20px;
+	padding: 20px;
+	background-color: rgba(125, 20, 30, 0.6);
+	border: 1px groove rgba(125, 20, 30, 0.5);
+	color: rgba(255, 255, 255, 1);
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	display: flex; /* makes child elements align easily */
+	position: relative;
+}
+.second {
+	margin: 20px;
+	padding: 20px;
+	height: 340px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgba(125, 20, 30, 1);
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	display: flex; /* makes child elements align easily */
+	flex-direction: column;
+	position: relative;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.tab {
+	margin: 5px auto;
+	padding:20px;
+	background-color: rgba(125, 20, 30, 0.6);
+	color: white;
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	border: 1px groove rgba(125, 20, 30, 0.5);
+	box-shadow: 0 0 15px rgba(125, 20, 30, 0.7);	
+}
+.tab:hover{
+	box-shadow: 0 0 15px rgba(200, 95, 115, 0.7);
+}
+.tab:active{
+	background-color: rgba(125, 20, 30, 0.3);
+}
+.arrow {
+	margin: 5px auto;
+	padding:20px;
+	background-color: rgba(125, 20, 30, 0.6);
+	color: white;
+	font-family: Bookman, URW Bookman L, serif;
+	font-size: 18px;
+	text-align: center;
+	border: 1px groove rgba(125, 20, 30, 0.5);
+	box-shadow: 0 0 15px rgba(125, 20, 30, 0.7);
+}
+.arrow:active {
+	background-color: rgba(125, 20, 30, 0.3);
+}
+.base {
+  width: 97.35%;       /* fills parent */
+  height: 200px;     /* or whatever height you need */
+  margin: 0;
+  padding: 20px;
+  color: white;
+  border: none;
+  background-color: black;
+  display: flex;
+  flex-direction: column;       /* Stack items vertically */
+          /* Align items to the right */
+  justify-content: flex-start;  /* Keep them at the top */
+  text-align: right;    /* align from the top */
+}
