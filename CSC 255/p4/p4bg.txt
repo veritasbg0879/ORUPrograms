@@ -1,0 +1,158 @@
+#include <string>
+#include <iostream>
+
+#include "p4.h"
+
+using namespace std;
+
+//Kandice
+	
+sBST::sBST(){
+    root = NULL;
+    treeCount = 0;
+}
+
+//******************************************************************************
+
+//Bella
+
+sBST::~sBST(){
+    clear(root);
+}
+
+//******************************************************************************
+
+//Kandice
+
+sNode::sNode(std::string text) {
+    right = left = NULL;
+    this->text = text;
+}
+
+//******************************************************************************
+
+//Kandice
+
+string sBST::findMin(sNode *ptr) {
+    while (ptr->left != nullptr) {
+        ptr = ptr->left;
+    }
+    return ptr -> text;
+}
+
+//******************************************************************************
+
+//Bella
+
+bool sBST::insert(string text, sNode *&p){
+	bool rc = false;
+	if (p) {
+		if (p->text > text) {
+			rc = insert(text, p->left);
+		} else if (p->text < text) {
+			rc = insert(text, p->right);
+		}
+	} else {
+		p = new sNode(text);
+		rc = true;
+		treeCount++;
+	}
+	return rc;
+}
+
+//******************************************************************************
+
+//Bella
+
+bool sBST::remove(string text, sNode *root){
+	return false;
+}
+
+//******************************************************************************
+
+//Bella
+
+void sBST::isIn(sNode *node) {
+
+}
+
+//******************************************************************************
+
+//Bella
+
+void sBST::printIt(sNode *node, string text) {
+    if (node){	
+	printIt(node->left);
+	cout << node->text << endl;
+	printIt(node->right);
+    }
+}
+
+//******************************************************************************
+
+//Kandice
+
+void sBST::clear(sNode *node) {
+    if (node != nullptr) {
+        clear(node->left);
+        clear(node->right);
+        delete node;
+    }
+}
+
+//******************************************************************************
+
+//Kandice
+
+string sBST::findMin(sNode *ptr) {
+    while (ptr->left != nullptr) {
+        ptr = ptr->left;
+    }
+    return ptr -> text;
+}
+
+//******************************************************************************
+
+//Bella
+
+void sBST::clear(sNode *p) {
+	clear(root);
+}
+
+//******************************************************************************
+
+//Bella
+
+bool sBST::insert(string text) {
+	return insert(text, root);
+}
+
+//******************************************************************************
+
+bool sBST::remove(string text) {
+	return remove(text, root);
+}
+
+//******************************************************************************
+
+bool sBST::isIn(string text) const {
+	return isIn(text, root);
+}
+
+//******************************************************************************
+
+void sBST::printIt() const {
+    printIt(root);
+}
+
+//******************************************************************************
+
+int sBST::count() const{
+	return treeCount;
+}
+
+//******************************************************************************
+
+void sBST::clear() {
+    clear(root);
+}

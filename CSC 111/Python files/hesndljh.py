@@ -1,0 +1,5 @@
+x = 28*(16**4)
+y = 28*(16**2)
+print(x)
+print(y)
+print(x + y)

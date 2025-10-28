@@ -1,0 +1,18 @@
+Monday, November 14th, 2022
+CSC 111, Wheat
+More on Objects
+
+-Review Sieve
+-Preview Diamonds
+-Objects
+
+-For Friday we are modifying a code
+(when correctly done, it looks like a red background with a blue diamond in the middle)
+(it's not a ridiculous amound of code since we're making use of the library.)
+-For Wednesday we are modifying the sieve 
+
+x = a * b
+a || b <= sqrt(x)
+
+how do we test if something is a prime number? take the square root. the moment we find a prime number greater than the
+square root that still doesn't go into the number it makes it a prime. we've tested everything less than the square root of the number.

@@ -1,0 +1,32 @@
+print("Name: Dr. Wheat")
+print("Program 2")
+print("CSC 111 Fall 2023")
+
+from array import array
+
+def createArray(n, type):
+    newArray = array(type)
+    for i in range(0, n):
+        newArray.append(0)
+    
+    return newArray
+
+n = 10
+a = createArray(n, 'f')
+b = createArray(n, 'f')
+
+f = open("p2Input.txt", "r")
+
+for i in range(0, 10):
+    a[i] = float(f.readline())
+
+for i in range(0, 10):
+    b[i] = float(f.readline())
+
+x = 0
+dot_product = 0
+while 0...n
+    x is a[i] times b[i]
+    total is the total plus x
+    print x
+print the dot product

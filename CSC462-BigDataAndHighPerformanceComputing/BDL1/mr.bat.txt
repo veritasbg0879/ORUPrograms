@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH --job-name=lab1
+#SBATCH -o lab1.%j.out	# name of your output file
+#SBATCH -e lab1.%j.err	# name of your output file
+
+#SBATCH -n 1
+
+##SBATCH --mail-user=youremail
+##SBATCH --mail-type=ALL
+
+#SBATCH --partition=sb
+#SBATCH --time=0-02:00          # time (DD-HH:MM)
+
+cd ~/courses/CSC462/BD/Lab1
+
+module load Python
+
+source ./env462/bin/activate
+
+python lab1ex1.py /scratch/CSC462/ngrams/googlebooks-eng-all-2gram-20090715-90conv.csv 

@@ -1,0 +1,22 @@
+/*	if (p) {
+		getEncodings(p->left, code, rv);
+		if (p->left) {
+			code.pat = code.pat << 1;
+			code.patCount++;
+		} else if (p->right) {
+			code.pat = code.pat += 1;
+		}
+		if (freqs[p->val] > 0) {
+			rv[p->val] = code;
+		}	
+		getEncodings(p->right, code, rv);
+	}
+*/
+
+	/*encoding* mobileHome = getEncodings();
+	if (p != NULL) {
+		printIt(p->left, code);		
+		printPattern(p->val, p->key, mobileHome[p->val]);
+		printIt(p->right, code);		
+	}
+	*/

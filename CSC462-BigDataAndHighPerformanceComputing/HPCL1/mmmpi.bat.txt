@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH --job-name=mmmpiV1
+#SBATCH -o mmmpi.%j.out	# name of your output file
+#SBATCH -e mmmpi.%j.err	# name of your output file
+# -N 2 means running on 2 real nodes; -n 8, means 8 total cores are requested, 4 per node.
+##SBATCH -N 2			# Number of servers to be used
+##SBATCH -n 32			# Total number of cores to be used,across all nodes; not per node
+##SBATCH --ntasks-per-node=16
+
+#SBATCH --exclusive # no other jobs on the nodes while job is running
+
+##SBATCH --mail-user=veritasbg@oru.edu
+##SBATCH --mail-type=ALL
+
+
+#SBATCH --partition=sb
+#SBATCH --time=0-02:00          # time (DD-HH:MM)
+
+module load compiler mpi
+
+prun ./mmmpiV1 $1 $2

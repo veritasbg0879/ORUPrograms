@@ -1,0 +1,8 @@
+sieve: prime numbers
+billy has a 2 so he doesnt pass on evens
+stacy has a three so she doesnt pass on odds that are divisible by three
+the next person has a five so she doesnt pass on odds that are divisible by three or five
+keep going
+the order is 2,3,5,7,11,13,17,19,23
+
+if it factors only by one and itself, its a prime number

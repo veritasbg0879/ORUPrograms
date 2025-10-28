@@ -1,0 +1,105 @@
+#Functions
+#11-09-2022
+#CSC111 Wheat
+
+def (name) (v,s)
+    calculate something
+    reurn something
+    
+and then say (name(v,s))
+
+
+from array import array   #/main program
+
+x = array('f')  #allocate two empty arrays
+y = array('f')
+
+print(x.length) # print the length which is currently 0
+
+fname1 = input("Enter first file name: ")
+fname2 = input("enter second file name: ")
+
+with open(fname1) as f: #open the file as f, f is our handle on the file
+    for line in f:      #
+        x.append(float(line))
+        
+#next code block knows nothing about our variable
+        
+with open(fname2) as f2:
+    for line in f2:
+        y.append(float(line))
+
+
+structured programming:
+    sequence, selection, iteration
+    functions (xyz, dot product, things of that variety)
+    [bad example:]
+     def min(x,y):
+         if x > y:
+            return x
+         else:
+            return y
+#dont return two things, that just bad code. it makes it not a straight flow anymore. this would fail you even though
+#you got the right answer.
+    [properly done:]
+    def min (x,y):
+        if x > y:
+            x = y
+        return x
+#just one return statement and put it at the end of the function, yhear??
+    we can just define something without returing. we can use implied return statements.
+    or just return without a variable
+    
+fileio we know how to read from a file
+we will learn to write in a file eventually
+
+uh
+
+something about objects
+
+dictionaries, bytes, so on and so forth
+
+the toolbox woohoo
+
+integers hold any whole number with one at a time
+
+float holds approximations to real numbers at one at a time
+
+an integer array holds however many integers we want it to and 0 floats
+
+a float array holds a ton of floats and zero integers
+
+what do you do if you want to hold a float and an integer?
+    there's nothing for that, even in the dictionary. we would have to change things up a bit.
+    float x and float y just need to be held guys
+    array [float x, float y, int direction]
+    
+runway 4 goes northeast
+runway 00 goes north and 180 goes south
+now you know
+why does the runway change from 4 to 5 if it isnt moved and its fine?
+    because the north pole changes! The runway is between 35 and 44 but if the absolute was 44 then the pole shifting means
+    the degree switches to 45-46 which is a different direction.
+an object is A NOUN OR A THING. its usually representing something in the real world.
+member variables i.e. [float x, float y, direction, gas, brakes, bool headlights, sounds] which makes up the object (car)
+
+int, float, byte, dict, car
+
+when there were only two cars in manhattan they both managed to get in an accident with each other. TWO CARS IN THE WHOLE CITY AND- 
+don't mind me
+
+we have to declare the new object because for some reason we wanted it.
+
+are you wearing clothes while driving?
+
+there are hundreds of variables for the one object. when we declare car1, we get every variable. same thing with car2.
+
+HOW. MANY. CARS. DO. YOU. WANT?
+
+creating an object like ch 9 dog is a description of how to make the object. 
+
+INSTANTIATION
+
+it doesnt make it, its just the plan. this is a new type force now.
+
+variable(my_dog(Dog)) creates a variable by calling the dog plan

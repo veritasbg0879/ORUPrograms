@@ -1,0 +1,6 @@
+create an integer array called sally
+put these numbers in sally starting at slot 0
+100,200,300,400,500,600,700,800,900,1000
+
+one loop only
+only 100 can be in the code, have as many one or two digit numbers as you want

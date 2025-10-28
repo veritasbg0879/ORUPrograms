@@ -1,0 +1,37 @@
+Tree count is 100
+Tree contents are: 
+Level[0]-> 980
+Level[1]-> 743 0
+Level[2]-> 508 700 529 262
+Level[3]-> 705 843 351 711 119 256 256 752
+Level[4]-> 169 164 592 549 223 972 868 933 847 917 932 169 366 330 393 108
+Level[5]-> 760 104 334 743 126 727 30 629 425 134 344 190 491 675 397 929 431 876 236 710 301 363 484 862 310 944 920 635 624 190 427 551
+Level[6]-> 963 656 195 337 330 690 801 738 783 665 352 754 509 306 7 245 93 184 356 649 596 824 497 719 327 49 695 405 119 509 490 613 572 932 256 620 749
+0: deq got 980 and TRUE
+1: deq got 963 and TRUE
+2: deq got 743 and TRUE
+3: deq got 700 and TRUE
+4: deq got 711 and TRUE
+5: deq got 933 and TRUE
+6: deq got 929 and TRUE
+7: deq got 868 and TRUE
+8: deq got 801 and TRUE
+9: deq got 783 and TRUE
+Tree count is now 0
+Tree count is 10
+Tree contents are: 
+Level[0]-> 933
+Level[1]-> 743 0
+Level[2]-> 508 700 529 262
+Level[3]-> 256 256 752
+0: deq got 933
+1: deq got 743
+2: deq got 700
+3: deq got 752
+4: deq got 508
+5: deq got 256
+6: deq got 529
+7: deq got 262
+8: deq got 256
+9: deq got 0
+all done 
