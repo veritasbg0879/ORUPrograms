@@ -1,0 +1,1 @@
+A very chaotic collection of all the programs I made in college. Lecture notes, assignment descriptions, and comments are unchanged from submission. Some programs are unfinished because a project partner has the final copy locally. :)
